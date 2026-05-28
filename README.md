@@ -37,34 +37,10 @@ This lab demonstrates a complete **enterprise data protection strategy** using *
 
 ## 🏗️ Lab Architecture
 
-```
-Microsoft 365 Tenant (M365 E5 + Entra ID P2)
-│
-├── Microsoft Purview
-│   ├── Information Protection
-│   │   ├── Sensitivity Label: "Confidential - AI Shield"
-│   │   │   ├── Scope: Files, Emails, Groups & Sites
-│   │   │   ├── Access Control: Encryption enforced
-│   │   │   ├── Permissions: Editor (AmalCyberLab07)
-│   │   │   └── Description: "Restricted from AI processing"
-│   │   │
-│   │   └── Label Policy: "AI Shield Publish Policy"
-│   │       └── Published to: All users & groups
-│   │
-│   └── Data Loss Prevention
-│       └── DLP Policy: "Block Copilot Policy"
-│           ├── Location: Microsoft 365 Copilot & Copilot Chat
-│           ├── Rule: "Block Copilot Rule"
-│           │   ├── Condition: Content contains "Confidential - AI Shield" label
-│           │   └── Action: Block Copilot from processing
-│           └── Mode: Turn on immediately
-│
-└── Microsoft 365 Copilot
-    └── DLP Enforcement: Action Blocked ✅
-        "Your organization has applied a DLP policy —
-        Confidential - AI Shield — that restricts
-        how sensitive content can be accessed and processed."
-```
+<div align="center">
+
+<img src="images/Architecture.png" width="100%" alt="Microsoft Purview AI Shield Lab">
+
 
 ---
 
@@ -395,7 +371,7 @@ MIT License — Feel free to use in your security projects.
 
 **Amal Udayanga Basnayake**
 
-Cloud & AI Security Engineer | Azure Security | SC-500 | AZ-500
+Cloud & AI Security  | Azure Security | SC-500 | AZ-500
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/amal-udayanga-basnayake)
 [![Portfolio](https://img.shields.io/badge/Portfolio-amalcyberlab.vercel.app-00C176?style=for-the-badge)](https://amalcyberlab.vercel.app)
